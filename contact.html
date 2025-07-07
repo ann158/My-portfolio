@@ -12,9 +12,10 @@
 </head>
 <body>
   <header class="navbar">
-    <h1 class="logo">Ann Omonche</h1>
+    <h1 class="logo"><i class="fas fa-code"></i> Ann Omonche</h1>
     <nav>
-      <ul class="nav-links">
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="about.html">About</a></li>
@@ -24,8 +25,8 @@
   </header>
 
   <section class="contact-section" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <p>You can reach me through the following platforms or send a message directly:</p>
+    <h2>📫 Contact Me</h2>
+    <p>You can reach me through the following platforms or send a direct message:</p>
 
     <ul class="contact-list">
       <li><i class="fas fa-envelope"></i> Email: <a href="mailto:annekwamboka57@gmail.com">annekwamboka57@gmail.com</a></li>
@@ -38,7 +39,7 @@
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
+      <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
     </form>
 
     <p id="form-message" style="display: none; color: green; margin-top: 1rem;">Thanks for reaching out! I’ll be in touch soon. 😊</p>
@@ -52,6 +53,11 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("nav-links").classList.toggle("show");
+    });
+
     const form = document.querySelector("form");
     const message = document.getElementById("form-message");
 
