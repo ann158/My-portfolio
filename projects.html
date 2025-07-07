@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Ann Kwamboka Omonche</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Ann Omonche</h1>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects-section" data-aos="fade-up">
+    <h2 style="text-align: center;">My Projects</h2>
+
+    <div class="projects-grid">
+      <!-- Feel254 Project -->
+      <div class="project-card">
+        <img src="assets/feel254.png" alt="Feel254 Project Screenshot" class="project-image" />
+        <h3>Feel254 (E-commerce)</h3>
+        <p>A full-stack MERN store where users can browse fashion, add to cart, and checkout.</p>
+        <a href="https://feel254.vercel.app" class="btn" target="_blank">Live Demo</a>
+      </div>
+
+      <!-- Able Care Clinic Project -->
+      <div class="project-card">
+        <img src="assets/able care.png" alt="Able Care Website Screenshot" class="project-image" />
+        <h3>Able Care Clinic Website</h3>
+        <p>A clean, responsive HTML/CSS website for a clinic — built with accessibility and a professional UI in mind.</p>
+        <a href="https://able-care.vercel.app" class="btn" target="_blank">View Project</a>
+      </div>
+
+      <!-- Recipe App Placeholder -->
+      <div class="project-card">
+        <img src="assets/recipe.png" alt="Recipe App Screenshot" class="project-image" />
+        <h3>Recipe App</h3>
+        <p>A simple recipe app built using HTML, CSS, and JavaScript that displays meals and categories.</p>
+        <a href="https://ann158.github.io/hotelmenu" class="btn" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ann Omonche. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("nav-links").classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
